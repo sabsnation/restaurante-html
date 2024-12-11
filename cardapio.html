@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Bode & Vinhos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="listas-topo">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="reserva.html">Reserva de Mesa</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Barra de Pesquisa -->
+        <form class="pesquisa-container">
+            <input 
+                type="search" 
+                id="barra-pesquisa" 
+                placeholder="Pesquise no cardápio..." 
+                aria-label="Pesquise no cardápio">
+        </form>
+
+        <h1 class="destaque-titulo">Nosso Cardápio</h1>
+            <br>
+        <!-- Entradas -->
+       <!-- Entradas -->
+<section class="menu">
+    <h2>Entradas</h2>
+    <article>
+        <input type="checkbox" id="entrada-1" hidden>
+        <label for="entrada-1" class="item">
+            <h3>Tábua de Frios e Queijos Regionais</h3>
+            <p>Seleção de queijos artesanais, embutidos e acompanhamentos como mel, geleias e pães rústicos.</p>
+            <p><strong>R$ 60,00</strong></p>
+        </label>
+    </article>
+    <article>
+        <input type="checkbox" id="entrada-2" hidden>
+        <label for="entrada-2" class="item">
+            <h3>Carpaccio de Carne de Sol</h3>
+            <p>Finas fatias de carne de sol, temperadas com azeite, limão, parmesão e pimenta rosa.</p>
+            <p><strong>R$ 45,00</strong></p>
+        </label>
+    </article>
+</section>
+
+<!-- Pratos Principais -->
+<section class="menu">
+    <h2>Pratos Principais</h2>
+    <article>
+        <input type="checkbox" id="principal-1" hidden>
+        <label for="principal-1" class="item">
+            <h3>Carré de Cordeiro ao Molho de Vinho Tinto</h3>
+            <p>Costeletas de cordeiro grelhadas, acompanhadas de purê de batatas trufado.</p>
+            <p><strong>R$ 85,00</strong></p>
+        </label>
+    </article>
+    <article>
+        <input type="checkbox" id="principal-2" hidden>
+        <label for="principal-2" class="item">
+            <h3>Risoto de Queijo de Cabra com Mel e Nozes</h3>
+            <p>Um prato que une o cremoso do queijo com o adocicado do mel e o crocante das nozes.</p>
+            <p><strong>R$ 70,00</strong></p>
+        </label>
+    </article>
+</section>
+
+<!-- Massas e Grelhados -->
+<section class="menu">
+    <h2>Massas e Grelhados</h2>
+    <article>
+        <input type="checkbox" id="massa-1" hidden>
+        <label for="massa-1" class="item">
+            <h3>Penne ao Pesto de Coentro</h3>
+            <p>Massa penne com um toque nordestino no pesto, feita de coentro e castanha de caju.</p>
+            <p><strong>R$ 55,00</strong></p>
+        </label>
+    </article>
+    <article>
+        <input type="checkbox" id="massa-2" hidden>
+        <label for="massa-2" class="item">
+            <h3>Picanha Suína com Redução de Vinho Branco</h3>
+            <p>Acompanhada de batatas rústicas e farofa de castanhas.</p>
+            <p><strong>R$ 75,00</strong></p>
+        </label>
+    </article>
+</section>
+
+<!-- Sobremesas -->
+<section class="menu">
+    <h2>Sobremesas</h2>
+    <article>
+        <input type="checkbox" id="sobremesa-1" hidden>
+        <label for="sobremesa-1" class="item">
+            <h3>Pudim de Leite com Redução de Porto</h3>
+            <p>Clássico pudim servido com um toque de vinho do Porto.</p>
+            <p><strong>R$ 25,00</strong></p>
+        </label>
+    </article>
+    <article>
+        <input type="checkbox" id="sobremesa-2" hidden>
+        <label for="sobremesa-2" class="item">
+            <h3>Torta de Queijo com Calda de Frutas Vermelhas</h3>
+            <p>Inspirada em cheesecakes, com uma base crocante e cobertura fresca.</p>
+            <p><strong>R$ 28,00</strong></p>
+        </label>
+    </article>
+</section>
+
+<!-- Bebidas -->
+<section class="menu">
+    <h2>Carta de Vinhos e Bebidas</h2>
+    <article>
+        <input type="checkbox" id="bebida-1" hidden>
+        <label for="bebida-1" class="item">
+            <h3>Vinhos Harmonizados</h3>
+            <p>Seleção de vinhos tintos, brancos e rosés para acompanhar nossos pratos.</p>
+            <p><strong>A partir de R$ 80,00</strong></p>
+        </label>
+    </article>
+    <article>
+        <input type="checkbox" id="bebida-2" hidden>
+        <label for="bebida-2" class="item">
+            <h3>Caipirinha de Vinho</h3>
+            <p>Um toque brasileiro, feito com vinho tinto, frutas frescas e açúcar mascavo.</p>
+            <p><strong>R$ 20,00</strong></p>
+        </label>
+    </article>
+</section>
+
+
+        <div class="reserva-container">
+            <a href="reserva.html" class="btn-reserva">Reserve Sua Mesa Agora</a>
+        </div>
+
+    </main>
+     <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Restaurante Bode & Vinhos</h4>
+                <p>Uma experiência gastronômica única que combina sabores rústicos com o requinte dos melhores vinhos.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><strong>Endereço:</strong> Rua dos Sabores, 123 - Cidade, Estado</p>
+                <p><strong>Telefone:</strong> (87) 98765-4321</p>
+                <p><strong>Email:</strong> contato@bodevinhos.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Restaurante Bode & Vinhos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

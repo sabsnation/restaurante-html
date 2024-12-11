@@ -1,0 +1,462 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+ 
+    text-align: center;
+}
+
+
+/* Contêiner principal do sobre nós*/
+.sobre-nos-extra {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha caso o espaço seja pequeno */
+    gap: 20px; /* Espaço entre os elementos */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.sobre-nos-extra > div {
+    flex: 1 1 300px; /* Os textos ocupam no mínimo 300px e ajustam conforme o espaço disponível */
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 10px; /* Espaço entre as imagens */
+}
+
+.img-paragrafos {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o espaço disponível */
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+}
+
+
+
+/* Estilo dos textos */
+.paragrafos {
+    flex: 2; /* Ocupa 2/3 do espaço */
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+/* Estilo das imagens */
+.carousel {
+    width: 100%;
+    max-width: 600px; /* Largura máxima do carrossel reduzida */
+    margin: 20px auto; /* Centraliza o carrossel */
+    overflow: hidden; /* Esconde o conteúdo excedente */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.carousel-container {
+    display: flex; /* Coloca os slides lado a lado */
+    animation: slide 10s infinite; /* Animação contínua */
+    justify-content: center; /* Centraliza os itens */
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do slide */
+}
+
+.carousel-slide img {
+    width: 70%; /* Reduz o tamanho da imagem para 70% da largura do carrossel */
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    58% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    91% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+
+/* Efeito ao passar o mouse */
+.hover-effect {
+    color: #333; /* Cor inicial */
+    font-weight: bold;
+    position: relative; /* Necessário para a animação */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    color: #b22222; /* Nova cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o texto */
+}
+
+/* Adiciona uma linha decorativa por trás do texto ao passar o mouse */
+.hover-effect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #b22222;
+    transition: width 0.3s ease;
+}
+
+.hover-effect:hover::after {
+    width: 100%; /* Linha completa ao passar o mouse */
+}
+
+
+.hero {
+    background: url('img/bode.jpg') center center no-repeat;
+    background-size: cover; /* Ou use 'contain' para ver a diferença */
+    color: #fff;
+    padding: 100px 20px;
+    min-height: 100vh; /* Faz com que a seção ocupe toda a altura da tela */
+}
+
+
+.hero h1 {
+    font-size: 3em;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #b22222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #720101;
+}
+
+.menu .item {
+    margin: 20px 0;
+}
+
+/* Estilo básico para o menu */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav .listas-topo {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+nav .listas-topo li {
+    display: inline;
+}
+
+nav .listas-topo a {
+    text-decoration: none;
+    color: #333; /* Cor inicial do link */
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.1s ease, background-color 0.1s ease; /* Suavidade no hover */
+}
+
+/* Efeito hover */
+nav .listas-topo a:hover {
+    color: #fff; /* Cor do texto ao passar o mouse */
+    background-color: #b22222; /* Fundo com a cor especificada */
+    border-radius: 10px; /* Bordas arredondadas para um toque suave */
+}
+
+
+footer {
+    background-color: #583807;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about h4,
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f4a460;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #f4a460;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #f4a460;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+
+/* Botão de reserva */
+.reserva-container {
+    text-align: center;
+    margin: 30px 0; /* Espaçamento acima e abaixo */
+}
+
+.btn-reserva {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b22222; /* Cor do botão */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-reserva:hover {
+    background-color: #800000; /* Cor no hover */
+    transform: scale(1.05); /* Efeito de leve zoom */
+}
+
+
+/* Cardápio */
+h1, h2 {
+    text-align: center;
+    color: #b22222;
+}
+
+.menu {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu .item {
+    margin-bottom: 15px;
+}
+
+.menu .item h3 {
+    margin-bottom: 5px;
+    color: #800000;
+}
+
+.menu .item p {
+    margin: 5px 0;
+}
+
+
+/* Barra de pesquisa */
+.pesquisa-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#barra-pesquisa {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #b22222;
+    border-radius: 8px;
+    outline: none;
+}
+
+#barra-pesquisa:focus {
+    border-color: #800000;
+    box-shadow: 0 0 5px rgba(128, 0, 0, 0.5);
+}
+
+/* Estilo do cardápio */
+
+.item {
+    display: block;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item h3 {
+    color: #b22222;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+/* Destaque para o título - versão sutil */
+.destaque-titulo {
+    font-size: 2.2rem; /* Tamanho grande, mas proporcional */
+    color: #800000; /* Tom discreto */
+    text-align: center; /* Centralizado */
+    margin: 20px 0;
+    padding: 8px 15px;
+    border-bottom: 3px solid #b22222; /* Linha inferior destacada */
+    display: inline-block; /* Ajusta largura ao texto */
+    text-transform: uppercase; /* Tudo em maiúsculas para sofisticação */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    font-weight: bold; /* Destaca sem exagerar */
+}
+
+/* Efeito ao passar o mouse */
+.destaque-titulo:hover {
+    color: #b22222; /* Cor levemente mais forte */
+    border-bottom-color: #800000; /* Inverte cores no hover */
+    transition: all 0.2s ease-in-out; /* Suavidade na transição */
+}
+
+
+/* Centraliza o título principal */
+.titulo-centralizado {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #800000;
+}
+
+/* Estilo do formulário */
+.form-reserva {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos rótulos e inputs */
+.form-reserva label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-reserva input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-reserva input:focus {
+    border-color: #800000;
+    box-shadow: 0 0 4px #800000;
+}
+
+/* Botão de envio */
+.form-reserva .btn {
+    padding: 10px 15px;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.form-reserva .btn:hover {
+    background-color: #b22222;
+}
+
